@@ -67,32 +67,34 @@ const AboutPage = () => {
 
           {/* Team Members Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Vice-secrétaire général - Abdelilah */}
+            {/* Vice President - Salah */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="aspect-square relative overflow-hidden">
                 <img
-                  src="/images/abdelilah-team.webp"
+                  src="/images/salah-team.webp"
                   alt={
-                    language === "fr" ? "Abdelilah Belfqih" : "عبد الإله بلفقيه"
+                    language === "fr"
+                      ? "Salah Eddine El Maqawi"
+                      : "صلاح الدين المقاوي"
                   }
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
                     <p className="text-sm">
-                      {language === "fr" ? "Entraîneur sportif" : "مدرب رياضي"}
+                      {language === "fr" ? "Agriculteur" : "فلاح"}
                     </p>
                   </div>
                 </div>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
-                  {language === "fr" ? "Abdelilah Belfqih" : "عبد الإله بلفقيه"}
+                  {language === "fr"
+                    ? "Salah Eddine El Maqawi"
+                    : "صلاح الدين المقاوي"}
                 </h3>
                 <p className="text-sm text-gray-600">
-                  {language === "fr"
-                    ? "Vice-secrétaire général"
-                    : "نائب الكاتب العام"}
+                  {language === "fr" ? "Vice-président" : "نائب الرئيس"}
                 </p>
               </div>
             </div>
@@ -209,34 +211,32 @@ const AboutPage = () => {
               </div>
             </div>
 
-            {/* Vice President - Salah */}
+            {/* Vice-secrétaire général - Abdelilah */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="aspect-square relative overflow-hidden">
                 <img
-                  src="/images/salah-team.webp"
+                  src="/images/abdelilah-team.webp"
                   alt={
-                    language === "fr"
-                      ? "Salah Eddine El Maqawi"
-                      : "صلاح الدين المقاوي"
+                    language === "fr" ? "Abdelilah Belfqih" : "عبد الإله بلفقيه"
                   }
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
                     <p className="text-sm">
-                      {language === "fr" ? "Agriculteur" : "فلاح"}
+                      {language === "fr" ? "Entraîneur sportif" : "مدرب رياضي"}
                     </p>
                   </div>
                 </div>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
-                  {language === "fr"
-                    ? "Salah Eddine El Maqawi"
-                    : "صلاح الدين المقاوي"}
+                  {language === "fr" ? "Abdelilah Belfqih" : "عبد الإله بلفقيه"}
                 </h3>
                 <p className="text-sm text-gray-600">
-                  {language === "fr" ? "Vice-président" : "نائب الرئيس"}
+                  {language === "fr"
+                    ? "Vice-secrétaire général"
+                    : "نائب الكاتب العام"}
                 </p>
               </div>
             </div>
