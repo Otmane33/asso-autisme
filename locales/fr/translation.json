@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "Qui sommes-nous",
+    "actions": "Actions & Projets",
+    "events": "Événements",
+    "getInvolved": "Participez",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Ensemble pour l'inclusion des enfants autistes",
+      "subtitle": "Une association marocaine dédiée au soutien, à la réhabilitation et à l'inclusion sociale",
+      "cta": "Faire un don"
+    },
+    "news": {
+      "title": "Actualités & Événements",
+      "viewAll": "Voir tout"
+    },
+    "gallery": {
+      "title": "Notre galerie"
+    },
+    "activities": {
+      "title": "Nos activités"
+    },
+    "events": {
+      "title": "Nos événements"
+    },
+    "directorMessage": {
+      "title": "Mot de la présidente"
+    }
+  },
+  "about": {
+    "title": "Qui sommes-nous",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Soutenir les enfants autistes et leurs familles à travers des programmes éducatifs, thérapeutiques et d'inclusion sociale adaptés à leurs besoins spécifiques."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Créer une société inclusive où chaque enfant autiste peut développer son plein potentiel et s'épanouir dans tous les aspects de sa vie."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "humanity": "Humanité",
+      "transparency": "Transparence",
+      "collaboration": "Collaboration",
+      "innovation": "Innovation"
+    },
+    "team": {
+      "title": "Notre équipe",
+      "members": {
+        "member1": {
+          "name": "Malika Mdarhri",
+          "role": "Présidente",
+          "bio": "Avec plus de 15 ans d'expérience dans le soutien aux enfants autistes, Malika est titulaire d'une formation en sciences sociales et en gestion de projets. Elle dirige l'association avec passion et dévouement."
+        },
+        "member2": {
+          "name": "Atika Mahmoudi",
+          "role": "Vice-présidente",
+          "bio": "Experte en communication et gestion de projets sociaux, Atika coordonne les initiatives de sensibilisation et les partenariats stratégiques de l'association."
+        },
+        "member3": {
+          "name": "Oustada Malika",
+          "role": "Responsable des programmes éducatifs",
+          "bio": "Éducatrice spécialisée avec une expertise dans les méthodes d'intervention auprès des enfants autistes, elle supervise tous les programmes éducatifs de l'association."
+        }
+      }
+    }
+  },
+  "actions": {
+    "title": "Actions & Projets",
+    "subtitle": "Découvrez nos activités et projets visant à améliorer la vie des enfants autistes et de leurs familles.",
+    "impact": {
+      "title": "Notre impact",
+      "children": "Enfants accompagnés",
+      "caravans": "Caravanes médicales organisées",
+      "families": "Familles soutenues"
+    },
+    "cta": {
+      "title": "Vous souhaitez contribuer à nos projets ?",
+      "subtitle": "Rejoignez-nous en tant que bénévole ou soutenez nos actions par un don.",
+      "button": "Comment participer"
+    }
+  },
+  "getInvolved": {
+    "title": "Comment Participer",
+    "subtitle": "Découvrez les différentes façons de contribuer à notre cause et de soutenir les enfants autistes et leurs familles.",
+    "contribute": {
+      "title": "Contribuez à notre cause",
+      "donations": {
+        "title": "Dons",
+        "financial": {
+          "title": "Dons financiers",
+          "description": "Soutenez nos projets via des paiements en ligne sécurisés ou des virements bancaires."
+        },
+        "material": {
+          "title": "Dons en nature",
+          "description": "Matériel éducatif, livres, jeux pédagogiques ou fournitures médicales."
+        }
+      },
+      "sponsoring": {
+        "title": "Sponsoring",
+        "activities": {
+          "title": "Parrainage d'activités",
+          "description": "Entreprises et institutions peuvent sponsoriser des événements spécifiques ou des campagnes de sensibilisation."
+        },
+        "partnerships": {
+          "title": "Partenariats à long terme",
+          "description": "Établissement de collaborations pour un soutien continu."
+        }
+      },
+      "volunteering": {
+        "title": "Bénévolat",
+        "field": {
+          "title": "Engagement sur le terrain",
+          "description": "Aidez lors de nos caravanes et activités éducatives."
+        },
+        "administrative": {
+          "title": "Support administratif",
+          "description": "Apportez votre expertise en comptabilité, marketing digital, design, etc."
+        }
+      }
+    },
+    "donation": {
+      "title": "Faire un don",
+      "bankInfo": "Informations bancaires",
+      "accountName": "Nom du compte :",
+      "bank": "Banque :",
+      "iban": "IBAN :",
+      "swift": "SWIFT/BIC :",
+      "online": "Don en ligne",
+      "onlineDescription": "Vous pouvez également faire un don sécurisé en ligne via notre plateforme de paiement.",
+      "button": "Faire un don maintenant",
+      "receipt": "Reçu fiscal",
+      "receiptDescription": "Un reçu fiscal vous sera délivré pour tout don effectué, vous permettant de bénéficier d'une réduction d'impôt conformément à la législation en vigueur."
+    },
+    "volunteer": {
+      "title": "Devenir bénévole",
+      "description": "Remplissez ce formulaire pour rejoindre notre équipe de bénévoles. Nous vous contacterons rapidement pour discuter des opportunités d'engagement.",
+      "form": {
+        "name": "Nom complet",
+        "email": "Adresse e-mail",
+        "phone": "Téléphone",
+        "expertise": "Domaine d'expertise",
+        "message": "Message",
+        "submit": "Envoyer ma candidature"
+      }
+    }
+  },
+  "events": {
+    "title": "Événements & Actualités",
+    "subtitle": "Restez informés de nos activités, événements à venir et dernières actualités.",
+    "upcoming": "Événements à venir",
+    "past": "Événements passés",
+    "news": "Dernières actualités",
+    "register": "S'inscrire",
+    "readMore": "Lire la suite",
+    "newsletter": {
+      "title": "Restez informés",
+      "subtitle": "Inscrivez-vous à notre newsletter pour recevoir nos actualités et les dates de nos prochains événements.",
+      "placeholder": "Votre adresse e-mail",
+      "button": "S'inscrire"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute question ou demande d'information.",
+    "form": {
+      "title": "Formulaire de Contact",
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone (facultatif)",
+      "message": "Message / Demande",
+      "submit": "Envoyer"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "address": "Adresse",
+      "addressValue": "Maison des Jeunes de Sidi Kacem",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "hours": "Horaires d'Ouverture",
+      "hoursValue": "Du lundi au vendredi, de 9h à 17h",
+      "followUs": "Suivez-nous"
+    },
+    "map": "Carte interactive sera chargée ici"
+  },
+  "footer": {
+    "copyright": "© 2024 Association Marocaine pour Enfants Autistes. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "languageSwitch": {
+    "fr": "العربية",
+    "ar": "Français"
+  }
+}
