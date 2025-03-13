@@ -204,44 +204,62 @@ const GetInvolvedPage = () => {
       {/* Ways to Contribute Section */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-12 text-center">
-            {language === "fr" ? "Contribuez à notre cause" : "ساهم في قضيتنا"}
-          </h2>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+              {language === "fr"
+                ? "Contribuez à notre cause"
+                : "ساهم في قضيتنا"}
+            </h2>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              {language === "fr"
+                ? "Choisissez la méthode qui vous convient le mieux pour soutenir notre mission auprès des enfants autistes."
+                : "اختر الطريقة التي تناسبك للمساهمة في دعم رسالتنا تجاه الأطفال ذوي التوحد."}
+            </p>
 
-          <div className="space-y-16">
-            {contributionWays.map((way) => (
-              <div key={way.id}>
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-8 flex items-center">
-                  <span className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
-                    {way.id}
-                  </span>
-                  {language === "fr" ? way.titleFr : way.titleAr}
-                </h3>
+            <div className="space-y-20">
+              {contributionWays.map((way) => (
+                <div
+                  key={way.id}
+                  className="transition-all duration-300 bg-white rounded-xl p-6 hover:shadow-xl"
+                >
+                  <h3 className="text-xl md:text-2xl font-bold text-primary mb-8 flex items-center bg-primary/5 p-4 rounded-lg shadow-sm">
+                    <span className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-md transform transition-transform hover:scale-110 hover:rotate-3">
+                      {way.id}
+                    </span>
+                    <span className="border-l-4 border-secondary pl-4">
+                      {language === "fr" ? way.titleFr : way.titleAr}
+                    </span>
+                  </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {way.items.map((item, index) => (
-                    <div
-                      key={index}
-                      className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:border-secondary transition-colors"
-                    >
-                      <div className="flex items-start">
-                        <div className="mr-4 mt-1">{item.icon}</div>
-                        <div>
-                          <h4 className="text-lg font-bold text-primary mb-2">
-                            {language === "fr" ? item.titleFr : item.titleAr}
-                          </h4>
-                          <p className="text-gray-700">
-                            {language === "fr"
-                              ? item.descriptionFr
-                              : item.descriptionAr}
-                          </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {way.items.map((item, index) => (
+                      <div
+                        key={index}
+                        className="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-100 hover:border-secondary hover:bg-primary/5 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 group"
+                      >
+                        <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
+                          <div className="mb-4 sm:mb-0 sm:mr-6 bg-primary/10 p-4 rounded-full flex-shrink-0 flex items-center justify-center transition-colors group-hover:bg-secondary/20 w-16 h-16">
+                            <div className="text-primary group-hover:text-secondary transition-all duration-300 group-hover:scale-110">
+                              {item.icon}
+                            </div>
+                          </div>
+                          <div className="sm:pt-2">
+                            <h4 className="text-lg font-bold text-primary mb-3 transition-colors group-hover:text-secondary">
+                              {language === "fr" ? item.titleFr : item.titleAr}
+                            </h4>
+                            <p className="text-gray-700 leading-relaxed">
+                              {language === "fr"
+                                ? item.descriptionFr
+                                : item.descriptionAr}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -273,19 +291,19 @@ const GetInvolvedPage = () => {
                     <span className="font-medium">
                       {language === "fr" ? "Banque :" : "البنك :"}
                     </span>{" "}
-                    Banque Populaire
+                    ---
                   </p>
                   <p>
                     <span className="font-medium">
                       {language === "fr" ? "IBAN :" : "رقم الحساب الدولي :"}
                     </span>{" "}
-                    MA123456789012345678901234
+                    ---
                   </p>
                   <p>
                     <span className="font-medium">
                       {language === "fr" ? "SWIFT/BIC :" : "رمز السويفت :"}
                     </span>{" "}
-                    BCPOMAMC
+                    ---
                   </p>
                 </div>
               </div>

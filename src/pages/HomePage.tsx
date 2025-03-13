@@ -85,8 +85,8 @@ const HomePage = () => {
               </div>
               <p className="mb-10 text-lg opacity-90 bg-primary/30 p-6 rounded-xl backdrop-blur-sm shadow-lg">
                 {language === "fr"
-                  ? "Notre association marocaine œuvre pour soutenir et réhabiliter les enfants autistes. Nous proposons des programmes éducatifs, des caravanes médicales et des actions de sensibilisation afin de favoriser leur intégration sociale. Rejoignez-nous pour faire la différence !"
-                  : "جمعيتنا المغربية تسعى إلى دعم وتأهيل الأطفال ذوي التوحد ومساندتهم في مسار الاندماج الاجتماعي والتربوي. نعمل على تقديم برامج توعوية وتكوينية، إضافةً إلى تنظيم قوافل طبية وتربوية بالشراكة مع مؤسسات محلية ووطنية. انضموا إلينا لنحدث فارقًا إيجابيًّا في حياة الأطفال وعائلاتهم."}
+                  ? "Notre association œuvre pour soutenir et réhabiliter les enfants autistes. Nous proposons des programmes éducatifs, des caravanes médicales et des actions de sensibilisation afin de favoriser leur intégration sociale. Rejoignez-nous pour faire la différence !"
+                  : "تسعى جمعيتنا إلى دعم وتأهيل الأطفال ذوي التوحد ومساندتهم في مسار الاندماج الاجتماعي والتربوي. نعمل على تقديم برامج توعوية وتكوينية، إضافةً إلى تنظيم قوافل طبية وتربوية بالشراكة مع مؤسسات محلية ووطنية. انضموا إلينا لنحدث فارقًا إيجابيًّا في حياة الأطفال وعائلاتهم."}
               </p>
               <div className="flex flex-wrap gap-6">
                 <Link
@@ -147,7 +147,7 @@ const HomePage = () => {
                     alt={
                       language === "fr"
                         ? "Malika Alaoui Mdarhri"
-                        : "مليكة علوي مدرحري"
+                        : "مليكة مدغري"
                     }
                     className="w-full h-64 md:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
@@ -160,7 +160,7 @@ const HomePage = () => {
                   <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">
                     {language === "fr"
                       ? "Malika Alaoui Mdarhri"
-                      : "مليكة علوي مدرحري"}
+                      : "مليكة مدغري"}
                   </h3>
                   <div className="w-12 h-0.5 bg-secondary mb-4"></div>
                   <p className="text-gray-600 italic mb-4">
@@ -168,18 +168,13 @@ const HomePage = () => {
                       ? "\"Notre mission est de bâtir des ponts d'espoir pour chaque enfant autiste et de créer un environnement où il pourra s'épanouir pleinement.\""
                       : '"مهمتنا هي بناء جسور الأمل لكل طفل مصاب بالتوحد وخلق بيئة يمكنه فيها الازدهار بشكل كامل."'}
                   </p>
-                  <div className="flex items-center">
-                    <div className="text-primary font-medium">
-                      {language === "fr" ? "Directrice" : "مديرة"}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Team Members Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 xs:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
             {/* Vice President - Salah */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="aspect-square relative overflow-hidden">
@@ -194,19 +189,19 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-sm">
+                    <p className="text-sm hidden sm:block">
                       {language === "fr" ? "Agriculteur" : "فلاح"}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
                   {language === "fr"
                     ? "Salah Eddine El Maqawi"
                     : "صلاح الدين المقاوي"}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   {language === "fr" ? "Vice-président" : "نائب الرئيس"}
                 </p>
               </div>
@@ -222,17 +217,17 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-sm">
+                    <p className="text-sm hidden sm:block">
                       {language === "fr" ? "Médecin" : "طبيب"}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
                   {language === "fr" ? "Aziz Mezrari" : "عزيز مزراري"}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   {language === "fr" ? "Trésorier" : "أمين المال"}
                 </p>
               </div>
@@ -252,19 +247,19 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-sm">
+                    <p className="text-sm hidden sm:block">
                       {language === "fr" ? "Professeur" : "أستاذ"}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
                   {language === "fr"
                     ? "Abdelrazak Eddriouch"
                     : "عبد الرزاق الدريوش"}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   {language === "fr" ? "Secrétaire général" : "الكاتب العام"}
                 </p>
               </div>
@@ -280,46 +275,18 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-sm">
+                    <p className="text-sm hidden sm:block">
                       {language === "fr" ? "Femme au foyer" : "ربة بيت"}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
                   {language === "fr" ? "Fatna Benchawi" : "فاطنة بنشاوي"}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   {language === "fr" ? "Conseiller" : "مستشار"}
-                </p>
-              </div>
-            </div>
-
-            {/* Vice-trésorier - Abdeljalil */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="/images/abdeljalil-team.webp"
-                  alt={
-                    language === "fr" ? "Abdeljalil Mars" : "عبد الجليل مارس"
-                  }
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <div className="text-white">
-                    <p className="text-sm">
-                      {language === "fr" ? "Employé" : "موظف"}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
-                  {language === "fr" ? "Abdeljalil Mars" : "عبد الجليل مارس"}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {language === "fr" ? "Vice-trésorier" : "نائب أمين المال"}
                 </p>
               </div>
             </div>
@@ -336,20 +303,46 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-sm">
+                    <p className="text-sm hidden sm:block">
                       {language === "fr" ? "Entraîneur sportif" : "مدرب رياضي"}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
                   {language === "fr" ? "Abdelilah Belfqih" : "عبد الإله بلفقيه"}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   {language === "fr"
                     ? "Vice-secrétaire général"
                     : "نائب الكاتب العام"}
+                </p>
+              </div>
+            </div>
+
+            {/* Vice-trésorier - Abdeljalil */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="aspect-square relative overflow-hidden">
+                <img
+                  src="/images/abdeljalil-team.webp"
+                  alt={language === "fr" ? "Jalil Mars" : "جليل مارس"}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <div className="text-white">
+                    <p className="text-sm hidden sm:block">
+                      {language === "fr" ? "Employé" : "موظف"}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 sm:p-4">
+                <h3 className="font-bold text-primary group-hover:text-secondary transition-colors text-xs sm:text-sm md:text-base">
+                  {language === "fr" ? "Jalil Mars" : "جليل مارس"}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  {language === "fr" ? "Vice-trésorier" : "نائب أمين المال"}
                 </p>
               </div>
             </div>
@@ -364,7 +357,7 @@ const HomePage = () => {
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="container-custom">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
-            {t("home.activities.title")}
+            {language === "fr" ? "Nos objectifs" : "أهدافنا"}
           </h2>
           <div className="space-y-4">
             {/* Objective 1 */}

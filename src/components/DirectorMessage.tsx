@@ -35,11 +35,9 @@ const DirectorMessage = () => {
                 </div>
                 <div className="text-center mt-4">
                   <p className="font-bold text-primary text-lg">
-                    {language === "fr" ? "Malika Mdarhri" : "مليكة مدغري"}
+                    {language === "fr" ? "" : ""}
                   </p>
-                  <p className="text-gray-600">
-                    {language === "fr" ? "Présidente" : "الرئيسة"}
-                  </p>
+                  <p className="text-gray-600">{language === "fr" ? "" : ""}</p>
                 </div>
               </div>
 

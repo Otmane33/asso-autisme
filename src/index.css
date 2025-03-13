@@ -133,6 +133,15 @@
   text-align: right;
 }
 
+/* S'assurer que les grilles maintiennent le même ordre indépendamment de la direction */
+[dir="rtl"] .grid {
+  direction: ltr; /* Force la direction de la grille à rester LTR même en mode RTL */
+}
+
+[dir="rtl"] .grid > * {
+  direction: rtl; /* Restaure la direction RTL pour le contenu à l'intérieur des cellules de la grille */
+}
+
 /* Styles pour les motifs de fond */
 .pattern-dots {
   background-image: radial-gradient(currentColor 1px, transparent 1px);
