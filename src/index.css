@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personnalisation supplémentaire */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-text-dark;
+  }
+
+  [dir="rtl"] body {
+    @apply font-arabic;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90 hover:translate-y-[-2px];
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary hover:bg-opacity-90 hover:translate-y-[-2px];
+  }
+
+  .card {
+    @apply bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-secondary;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-primary mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-20 after:h-1 after:bg-secondary after:rounded-full;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-5 md:px-8;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary via-primary to-primary/90;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:translate-y-[-5px];
+  }
+
+  .input-field {
+    @apply px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.7s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Styles pour les éléments RTL */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Styles pour les motifs de fond */
+.pattern-dots {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+}
+
+/* Masquer la barre de défilement pour les galeries d'images */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+img {
+  @apply max-w-full;
+}
+
+/* Effet de surbrillance pour les champs de formulaire */
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-2 ring-primary ring-opacity-50;
+}
+
+/* Personnalisation de l'aspect des sélections de texte */
+::selection {
+  @apply bg-secondary/30 text-primary;
+}
