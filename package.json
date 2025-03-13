@@ -35,9 +35,12 @@
     "gh-pages": "^6.3.0",
     "globals": "^13.24.0",
     "postcss": "^8.4.35",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.1",
     "typescript": "~5.3.3",
     "typescript-eslint": "^7.0.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-sitemap": "^0.7.1"
   }
 }

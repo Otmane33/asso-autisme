@@ -4,10 +4,101 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/images/Logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Association Autisme</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Association pour l'Accompagnement et l'Intégration des Enfants Autistes au Maroc. Programmes éducatifs, sensibilisation et soutien aux familles."
+    />
+    <meta
+      name="keywords"
+      content="autisme, association autisme, enfants autistes, Maroc, intégration, accompagnement, sensibilisation, تأهيل وإدماج أطفال التوحد"
+    />
+    <meta
+      name="author"
+      content="Association pour l'Accompagnement et l'Intégration des Enfants Autistes"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://asso-autisme.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Association Autisme - Accompagnement et Intégration"
+    />
+    <meta
+      property="og:description"
+      content="Association pour l'Accompagnement et l'Intégration des Enfants Autistes au Maroc. Programmes éducatifs, sensibilisation et soutien aux familles."
+    />
+    <meta
+      property="og:image"
+      content="https://asso-autisme.netlify.app/images/Logo.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://asso-autisme.netlify.app/" />
+    <meta
+      property="twitter:title"
+      content="Association Autisme - Accompagnement et Intégration"
+    />
+    <meta
+      property="twitter:description"
+      content="Association pour l'Accompagnement et l'Intégration des Enfants Autistes au Maroc. Programmes éducatifs, sensibilisation et soutien aux familles."
+    />
+    <meta
+      property="twitter:image"
+      content="https://asso-autisme.netlify.app/images/Logo.webp"
+    />
+
+    <!-- Multilingual Support -->
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://asso-autisme.netlify.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ar"
+      href="https://asso-autisme.netlify.app/?lang=ar"
+    />
+    <link rel="canonical" href="https://asso-autisme.netlify.app/" />
+
+    <title>
+      Association Autisme - Accompagnement et Intégration des Enfants Autistes
+    </title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Association pour l'Accompagnement et l'Intégration des Enfants Autistes",
+        "alternateName": "جمعية تأهيل وإدماج أطفال التوحد",
+        "url": "https://asso-autisme.netlify.app/",
+        "logo": "https://asso-autisme.netlify.app/images/Logo.webp",
+        "sameAs": [
+          "https://facebook.com/assoautisme",
+          "https://instagram.com/assoautisme"
+        ],
+        "description": "Association dédiée au soutien et à l'intégration des enfants autistes au Maroc à travers des programmes éducatifs, des caravanes médicales et des actions de sensibilisation.",
+        "telephone": "+212 661-706665",
+        "email": "contact@assooufok.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Maroc"
+        },
+        "serviceType": [
+          "Programmes éducatifs",
+          "Caravanes médicales",
+          "Sensibilisation",
+          "Accompagnement des familles"
+        ]
+      }
+    </script>
   </body>
 </html>

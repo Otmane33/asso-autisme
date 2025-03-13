@@ -1,0 +1,10 @@
+# Robots.txt pour Association Autisme
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://asso-autisme.netlify.app/sitemap.xml
+
+# Ne pas indexer ces chemins
+Disallow: /admin/
+Disallow: /api/ 
