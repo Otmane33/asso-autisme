@@ -213,7 +213,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            {/* Vice-trésorier - Abdeljalil */}
+            {/* Vice-trésorier - Jalil */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="aspect-square relative overflow-hidden">
                 <img
