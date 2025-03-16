@@ -48,10 +48,11 @@ const DirectorMessage = () => {
                     <p className="italic text-gray-600">Chers amis et amies,</p>
 
                     <p>
-                      L'Association Oufok s'engage avec cœur dans
-                      l'accompagnement des personnes autistes. Avec mon équipe,
-                      nous avons décidé de conjuguer nos talents, nos ressources
-                      et notre détermination pour bâtir une structure
+                      l'AAIDEA (Association pour l'Accompagnement et
+                      l'Intégration des Enfants Autistes) s'engage avec cœur
+                      dans l'accompagnement des personnes autistes. Avec mon
+                      équipe, nous avons décidé de conjuguer nos talents, nos
+                      ressources et notre détermination pour bâtir une structure
                       ambitieuse, capable de répondre à l'ensemble des besoins
                       liés à l'autisme, quel que soit l'âge, tout en portant
                       haut nos valeurs militantes et en développant des services
